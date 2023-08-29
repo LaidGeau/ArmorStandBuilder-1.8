@@ -1,0 +1,108 @@
+import org.bukkit.entity.ArmorStand;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.util.EulerAngle;
+
+public class ArmorStandBuilder {
+
+    // ArmorStandBuilder by Laid_Geau
+    // Minecraft Version: 1.8
+    // ArmorStand Site: https://haselkern.com/Minecraft-ArmorStand/
+
+    private final ArmorStand armorStand;
+
+    public ArmorStandBuilder(Player player) {
+        armorStand = (ArmorStand) player.getLocation().getWorld().spawnEntity(player.getLocation(), EntityType.ARMOR_STAND);
+    }
+
+    public ArmorStandBuilder setVisible(boolean bln) {
+        this.armorStand.setVisible(bln);
+        return this;
+    }
+
+    public ArmorStandBuilder setSmall(boolean bln) {
+        this.armorStand.setSmall(bln);
+        return this;
+    }
+
+    public ArmorStandBuilder setRightLegPose(EulerAngle eulerAngle) {
+        this.armorStand.setRightLegPose(eulerAngle);
+        return this;
+    }
+
+    public ArmorStandBuilder setRightArmPose(EulerAngle eulerAngle) {
+        this.armorStand.setRightArmPose(eulerAngle);
+        return this;
+    }
+
+    public ArmorStandBuilder setMarker(boolean bln) {
+        this.armorStand.setMarker(bln);
+        return this;
+    }
+
+    public ArmorStandBuilder setLeggings(ItemStack item) {
+        this.armorStand.setLeggings(item);
+        return this;
+    }
+
+    public ArmorStandBuilder setLeftLegPose(EulerAngle eulerAngle) {
+        this.armorStand.setLeftLegPose(eulerAngle);
+        return this;
+    }
+
+    public ArmorStandBuilder setLeftArmPose(EulerAngle eulerAngle) {
+        this.armorStand.setLeftArmPose(eulerAngle);
+        return this;
+    }
+
+    public ArmorStandBuilder setItemInHand(ItemStack item) {
+        this.armorStand.setItemInHand(item);
+        return this;
+    }
+
+    public ArmorStandBuilder setHelmet(ItemStack item) {
+        this.armorStand.setHelmet(item);
+        return this;
+    }
+
+    public ArmorStandBuilder setHeadPose(EulerAngle eulerAngle) {
+        this.armorStand.setHeadPose(eulerAngle);
+        return this;
+    }
+
+    public ArmorStandBuilder setGravity(boolean bln) {
+        this.armorStand.setGravity(bln);
+        return this;
+    }
+
+    public ArmorStandBuilder setChestplate(ItemStack item) {
+        this.armorStand.setChestplate(item);
+        return this;
+    }
+
+    public ArmorStandBuilder setBoots(ItemStack item) {
+        this.armorStand.setBoots(item);
+        return this;
+    }
+
+    public ArmorStandBuilder setBodyPose(EulerAngle eulerAngle) {
+        this.armorStand.setBodyPose(eulerAngle);
+        return this;
+    }
+
+    public ArmorStandBuilder setBasePlate(boolean bln) {
+        this.armorStand.setBasePlate(bln);
+        return this;
+    }
+
+    public ArmorStandBuilder setArms(boolean bln) {
+        this.armorStand.setArms(bln);
+        return this;
+    }
+
+    public void kill() {
+        armorStand.remove();
+    }
+
+}
