@@ -7,6 +7,8 @@ Aide n°1 : Explication de la class
 - setGravity(boolean) = Définit si la gravité s'applique à ce support d'armure.
 - setArms(boolean) = Définit si ce support d'armure a des bras.
 - setBasePlate(boolean) = Définit si le support d'armure a une plaque de base.
+- setCustomName(String) = Définit un nom à l'ArmorStand.
+- setCustomNameVisible(boolean) = Active ou non l'affichage du nom du porte armure.
 
 - setHelmet(ItemStack) = Fixe l'objet actuellement porté par le support d'armure sur sa tête.
 - setChestplate(ItemStack) = Fixe l'objet actuellement porté par le support d'armure sur sa poitrine.
