@@ -26,33 +26,8 @@ public class ArmorStandBuilder {
         return this;
     }
 
-    public ArmorStandBuilder setRightLegPose(EulerAngle eulerAngle) {
-        this.armorStand.setRightLegPose(eulerAngle);
-        return this;
-    }
-
-    public ArmorStandBuilder setRightArmPose(EulerAngle eulerAngle) {
-        this.armorStand.setRightArmPose(eulerAngle);
-        return this;
-    }
-
     public ArmorStandBuilder setMarker(boolean bln) {
         this.armorStand.setMarker(bln);
-        return this;
-    }
-
-    public ArmorStandBuilder setLeggings(ItemStack item) {
-        this.armorStand.setLeggings(item);
-        return this;
-    }
-
-    public ArmorStandBuilder setLeftLegPose(EulerAngle eulerAngle) {
-        this.armorStand.setLeftLegPose(eulerAngle);
-        return this;
-    }
-
-    public ArmorStandBuilder setLeftArmPose(EulerAngle eulerAngle) {
-        this.armorStand.setLeftArmPose(eulerAngle);
         return this;
     }
 
@@ -61,33 +36,8 @@ public class ArmorStandBuilder {
         return this;
     }
 
-    public ArmorStandBuilder setHelmet(ItemStack item) {
-        this.armorStand.setHelmet(item);
-        return this;
-    }
-
-    public ArmorStandBuilder setHeadPose(EulerAngle eulerAngle) {
-        this.armorStand.setHeadPose(eulerAngle);
-        return this;
-    }
-
     public ArmorStandBuilder setGravity(boolean bln) {
         this.armorStand.setGravity(bln);
-        return this;
-    }
-
-    public ArmorStandBuilder setChestplate(ItemStack item) {
-        this.armorStand.setChestplate(item);
-        return this;
-    }
-
-    public ArmorStandBuilder setBoots(ItemStack item) {
-        this.armorStand.setBoots(item);
-        return this;
-    }
-
-    public ArmorStandBuilder setBodyPose(EulerAngle eulerAngle) {
-        this.armorStand.setBodyPose(eulerAngle);
         return this;
     }
 
@@ -98,6 +48,66 @@ public class ArmorStandBuilder {
 
     public ArmorStandBuilder setArms(boolean bln) {
         this.armorStand.setArms(bln);
+        return this;
+    }
+
+    public ArmorStandBuilder setCustomName(String displayName) {
+        this.armorStand.setCustomName(displayName);
+        return this;
+    }
+
+    public ArmorStandBuilder setCustomNameVisible(boolean bln) {
+        this.armorStand.setCustomNameVisible(bln);
+        return this;
+    }
+
+    public ArmorStandBuilder setHeadPose(EulerAngle eulerAngle) {
+        this.armorStand.setHeadPose(eulerAngle);
+        return this;
+    }
+
+    public ArmorStandBuilder setBodyPose(EulerAngle eulerAngle) {
+        this.armorStand.setBodyPose(eulerAngle);
+        return this;
+    }
+
+    public ArmorStandBuilder setRightArmPose(EulerAngle eulerAngle) {
+        this.armorStand.setRightArmPose(eulerAngle);
+        return this;
+    }
+
+    public ArmorStandBuilder setLeftArmPose(EulerAngle eulerAngle) {
+        this.armorStand.setLeftArmPose(eulerAngle);
+        return this;
+    }
+
+    public ArmorStandBuilder setRightLegPose(EulerAngle eulerAngle) {
+        this.armorStand.setRightLegPose(eulerAngle);
+        return this;
+    }
+
+    public ArmorStandBuilder setLeftLegPose(EulerAngle eulerAngle) {
+        this.armorStand.setLeftLegPose(eulerAngle);
+        return this;
+    }
+
+    public ArmorStandBuilder setHelmet(ItemStack item) {
+        this.armorStand.setHelmet(item);
+        return this;
+    }
+
+    public ArmorStandBuilder setChestplate(ItemStack item) {
+        this.armorStand.setChestplate(item);
+        return this;
+    }
+
+    public ArmorStandBuilder setLeggings(ItemStack item) {
+        this.armorStand.setLeggings(item);
+        return this;
+    }
+
+    public ArmorStandBuilder setBoots(ItemStack item) {
+        this.armorStand.setBoots(item);
         return this;
     }
 
